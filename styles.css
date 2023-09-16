@@ -1,0 +1,266 @@
+/********* BASIC RESET **********/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+h1, h2, h3, h4 h5, p, ul, li{
+    padding: 0;
+    margin: 0
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul, nav ol, li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+:root{
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+/******** TYPOGRAPHY *********/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url(images/bg-intro-mobile.png);
+    /* background-repeat: no-repeat;  */
+    background-color: var(--Red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px 10px 30px;
+}
+
+form input{
+    font-family: inherit;
+}
+
+
+/****** PAGE SECTION *******/
+
+.page{
+    max-width: 1500px;
+}
+
+/***** TEXT CONTAINER ******/
+
+.text-container h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.text-container p{
+    color: var(--Grayish-Blue);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+
+}
+
+/****** FORM CONTAINER ********/
+
+.form-container{
+    padding-top: 20px;
+}
+
+.form-container > div{
+    border: 2px solid var(--Blue);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: var(--Blue);
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 5px 0 var(--Dark-Blue);
+}
+
+.form-container > div strong{
+    font-weight: 700;
+}
+
+form{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+form div{
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.error-msg{
+    text-align: right;
+    color: red;
+    display: none;
+}
+
+input{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+
+input:focus{
+    border: 2px solid var(--Dark-Blue);
+}
+
+label{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    /* padding-top: 5px; */
+    display: none;
+}
+
+button{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--Green);
+    background-color: var(--Green);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px var(--Dark-Blue);
+}
+
+button:hover{
+    border:  1px solid hsl(154, 57%, 69%) ;
+    background-color: hsl(154, 57%, 69%);
+}
+
+.terms{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.terms span{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/****** TABLET SCREEN ********/
+
+@media only screen and (min-width: 760px) {
+ 
+    .text-container h1{
+        font-size: 3.4rem;
+    }
+
+    .text-container p{
+        font-size: 1.4rem;
+    }
+
+    .form-container > div{
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+
+    form{
+        padding: 50px;
+    }
+
+    .error-msg{
+        font-size: 16px;
+    }
+
+    input{
+        padding: 20px;
+    }
+
+    label{
+        top: 15px;
+    }
+
+
+    
+}
+
+/****** LARGE TABLET SCREEN *******/
+
+@media only screen and (min-width: 1020px){
+
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+        padding-top: 50px;
+    }
+    .page{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .text-container{
+        flex: 1;
+        text-align: left;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container h1{
+        text-align: left;
+    }
+
+    .text-container p{
+        text-align: left;
+    }
+
+    .form-container{
+        flex: 1;
+    }
+
+
+}
+
+/******* DESKTOP SCREEN ***********/
+
+@media only screen and (min-width: 1200px){
+
+}
+
+/********* LARGE DESKTOP SCREEN *****/
+
+@media only screen and (min-width: 1500px){
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
