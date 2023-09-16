@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Praixx/intro-component-with-signup-form-master)
+- Live Site URL: (https://willowy-daffodil-9fc4ff.netlify.app/)
 
 ## My process
 
